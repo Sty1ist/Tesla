@@ -1,0 +1,41 @@
+.header {
+    border: 1px solid red;
+    nav{
+        display: flex;
+        margin: 24px 60px 0 43px;
+        border: 1px solid red;
+        justify-content: space-between;
+        align-items: center;
+        li a{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            color: #000000;
+            text-decoration: none;
+            padding-bottom: 6px;
+            border-bottom: 2px transparent solid;
+            transition: 0.2s all;
+            &:hover , &.active {
+                border-bottom: 2px solid #E51937;
+                color: #E51937;
+                
+            }
+            
+
+        }
+    }
+    &__menu{
+        &_1, &_2{
+        padding: 0;
+        list-style: none;
+        display: flex;
+        border: 1px solid red;
+        margin: 0;
+        justify-content: space-between;
+        }
+        &_2 a {
+            margin-right: 30px;
+        }
+    }
+}
